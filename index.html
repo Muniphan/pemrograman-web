@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portofolio Digital Haidar Hanif Wahyudi - Mahasiswa Teknik Informatika Universitas Muhammadiyah Malang & Pengembang Web dengan arsitektur HTML5 semantik, CSS murni, dan JavaScript.">
+  <meta name="keywords"
+    content="Portfolio, Resume Digital, Haidar Hanif Wahyudi, UMM, Teknik Informatika, Web Developer, TukarIlmu, Pramuka, Raimuna Nasional">
+  <meta name="author" content="Haidar Hanif Wahyudi">
+
+  <title>Haidar Hanif Wahyudi | Portofolio &amp; Resume Digital</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet CSS Murni (Bebas Framework) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Aksesibilitas: Tautan Langsung ke Konten Utama -->
+  <a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
+
+  <!-- ==================== HEADER & NAVIGASI ==================== -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Beranda Haidar Profile">
+        <span class="brand-badge">&lt;HHW/&gt;</span>
+        <span class="brand-name">Haidar Profile</span>
+      </a>
+
+      <!-- Menu Navigasi Utama -->
+      <nav class="site-nav" id="site-nav" aria-label="Navigasi Utama">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Beranda</a></li>
+          <li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li class="nav-item"><a href="#proyek" class="nav-link">Proyek</a></li>
+          <li class="nav-item"><a href="#riwayat" class="nav-link">Pengalaman</a></li>
+          <li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aksi Header: Mode Gelap/Terang & Tombol Mobile -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Beralih tema gelap atau terang"
+          title="Ganti Tema">
+          <span class="theme-icon icon-sun" aria-hidden="true">☀️</span>
+          <span class="theme-icon icon-moon" aria-hidden="true">🌙</span>
+        </button>
+
+        <a href="#kontak" class="btn btn-outline btn-sm nav-cta">Hubungi Saya</a>
+
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-controls="site-nav" aria-expanded="false"
+          aria-label="Buka navigasi menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== KONTEN UTAMA ==================== -->
+  <main id="main-content">
+
+    <!-- 1. HERO / BERANDA -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-indicator" aria-hidden="true"></span>
+            <span>Mahasiswa Teknik Informatika UMM &bull; Terbuka untuk Kolaborasi</span>
+          </div>
+
+          <p class="hero-greeting">Halo semua, selamat datang! Saya</p>
+          <h1 class="hero-title">
+            Haidar Hanif <span class="text-gradient">Wahyudi</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            <span class="typing-text">Informatics Student &amp; Web Developer</span>
+          </p>
+
+          <p class="hero-description">
+            Kelahiran 2006, saat ini menempuh studi S1 Teknik Informatika di Universitas Muhammadiyah Malang (Angkatan
+            2024). Berpengalaman dalam kepemimpinan organisasi, kepramukaan nasional, dan rekayasa platform web edukasi
+            interaktif.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#proyek" class="btn btn-primary">
+              <span>Lihat Karya TukarIlmu</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#kontak" class="btn btn-secondary">
+              <span>Hubungi Saya</span>
+            </a>
+            <a href="assets/images/profile.png" download="Foto_Haidar_Hanif_Wahyudi.png" class="btn btn-ghost"
+              title="Unduh Foto Profil / Resume">
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+              </svg>
+              <span>Unduh Foto</span>
+            </a>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-social">
+            <span class="social-label">Tautan Terhubung:</span>
+            <div class="social-links">
+              <a href="https://github.com/Muniphan" target="_blank" rel="noopener noreferrer" class="social-btn"
+                aria-label="Profil GitHub Haidar Hanif Wahyudi">
+                <img src="assets/icons/github.svg" alt="" width="20" height="20" aria-hidden="true">
+                <span class="sr-only">GitHub</span>
+              </a>
+              <a href="mailto:haidarhanifwahyudi@gmail.com" class="social-btn"
+                aria-label="Kirim Email ke Haidar Hanif Wahyudi">
+                <img src="assets/icons/email.svg" alt="" width="20" height="20" aria-hidden="true">
+                <span class="sr-only">Email</span>
+              </a>
+              <a href="tel:0895621142586" class="social-btn" aria-label="Telepon atau WhatsApp Haidar Hanif Wahyudi">
+                <img src="assets/icons/phone.svg" alt="" width="20" height="20" aria-hidden="true">
+                <span class="sr-only">Telepon</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <div class="profile-glow" aria-hidden="true"></div>
+            <figure class="profile-figure">
+              <img src="assets/images/profile.png" alt="Foto resmi Haidar Hanif Wahyudi" class="profile-img" width="400"
+                height="400" loading="eager">
+              <figcaption class="sr-only">Foto profil resmi Haidar Hanif Wahyudi</figcaption>
+            </figure>
+
+            <!-- Floating Badges di Foto -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">🎓</span>
+              <div class="badge-text">
+                <span class="badge-title">Informatika UMM</span>
+                <span class="badge-sub">Angkatan 2024</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-icon">⚜️</span>
+              <div class="badge-text">
+                <span class="badge-title">Ketua Dewan Ambalan</span>
+                <span class="badge-sub">Raimuna Nasional</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. TENTANG SAYA (ABOUT ME) -->
+    <section class="section about-section" id="tentang">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-tag">Kenali Lebih Dekat</p>
+          <h2 class="section-title">Tentang Saya</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </header>
+
+        <div class="about-grid">
+
+          <article class="about-bio-card">
+            <h3 class="about-bio-title">Dedikasi Teknologi, Kepemimpinan, &amp; Inovasi Web</h3>
+            <p class="about-text">
+              Halo! Saya <strong>Haidar Hanif Wahyudi</strong>, lahir pada tahun <strong>2006</strong>. Saat ini saya
+              merupakan mahasiswa aktif program studi <em>S1 Teknik Informatika di Universitas Muhammadiyah Malang (UMM)
+                Angkatan 2024</em>.
+            </p>
+            <p class="about-text">
+              Perjalanan saya diwarnai dengan semangat kepemimpinan dan rasa ingin tahu yang tinggi. Semasa di SMA
+              Negeri 1 Turen, saya dipercaya mengemban amanah sebagai <strong>Ketua Dewan Ambalan (2023–2024)</strong>
+              serta berkesempatan menjadi peserta perhelatan akbar <strong>Raimuna Nasional (Rainas)</strong>, yang
+              membentuk kedisiplinan, ketangguhan mental, dan kecakapan kerja sama tim saya.
+            </p>
+            <p class="about-text">
+              Di bidang teknologi, saya memfokuskan diri pada pengembangan website modern dengan fondasi kode bersih
+              standar W3C. Salah satu wujud karya nyata saya adalah mengembangkan dan mengelola platform belajar
+              mahasiswa <strong>TukarIlmu</strong> (<a href="https://tukarilmu.radya.my.id/" target="_blank"
+                rel="noopener noreferrer" class="link-highlight">tukarilmu.radya.my.id</a>).
+            </p>
+
+            <div class="about-info-grid">
+              <div class="info-item">
+                <span class="info-label">Nama Lengkap:</span>
+                <span class="info-value">Haidar Hanif Wahyudi</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Tahun Kelahiran:</span>
+                <span class="info-value">2006</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Pendidikan Terkini:</span>
+                <span class="info-value">S1 Teknik Informatika UMM (2024)</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Lokasi Domisili:</span>
+                <span class="info-value text-accent font-medium">Malang, Jawa Timur, Indonesia</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kartu Statistik & Nilai Tambah -->
+          <aside class="about-stats-container" aria-label="Statistik dan Pencapaian">
+            <div class="stat-card">
+              <div class="stat-number">2024</div>
+              <div class="stat-label">Informatika UMM</div>
+              <p class="stat-desc">Mahasiswa S1 Teknik Informatika Universitas Muhammadiyah Malang.</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">Live</div>
+              <div class="stat-label">Platform TukarIlmu</div>
+              <p class="stat-desc">Karya platform peer-to-peer learning mahasiswa yang aktif diakses publik.</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">2023</div>
+              <div class="stat-label">Raimuna Nasional</div>
+              <p class="stat-desc">Peserta perkemahan akbar Pramuka Penegak &amp; Pandega tingkat nasional.</p>
+            </div>
+
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">HTML5 Semantik &amp; CSS</div>
+              <p class="stat-desc">Penerapan standar W3C valid murni tanpa framework eksternal.</p>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. PROYEK / PORTOFOLIO -->
+    <section class="section projects-section" id="proyek">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-tag">Karya Unggulan</p>
+          <h2 class="section-title">Portofolio Proyek</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-lead">Hasil karya aplikasi web unggulan yang telah dirancang, dikembangkan, dan diluncurkan
+            secara langsung.</p>
+        </header>
+
+        <!-- Kartu Proyek Utama: TukarIlmu (Foto 1 dari User) -->
+        <article class="featured-project-card">
+          <div class="featured-project-grid">
+
+            <div class="featured-thumbnail-wrap">
+              <figure class="featured-figure">
+                <img src="assets/images/projects/tukarilmu.png"
+                  alt="Tampilan antarmuka website TukarIlmu - Platform Belajar Mahasiswa" class="featured-img"
+                  width="700" height="420" loading="lazy">
+                <figcaption class="sr-only">Tangkapan layar antarmuka platform TukarIlmu</figcaption>
+              </figure>
+              <div class="featured-live-badge">
+                <span class="live-dot" aria-hidden="true"></span>
+                <span>Proyek Aktif (Live Production)</span>
+              </div>
+            </div>
+
+            <div class="featured-details">
+              <span class="project-tag-pill">Edukasi &amp; Pembelajaran Peer-to-Peer</span>
+              <h3 class="featured-title">TukarIlmu - Platform Belajar Mahasiswa</h3>
+
+              <p class="featured-lead">
+                <strong>TukarIlmu</strong> (<a href="https://tukarilmu.radya.my.id/" target="_blank"
+                  rel="noopener noreferrer" class="link-highlight">tukarilmu.radya.my.id</a>) adalah platform belajar
+                kolaboratif antar-mahasiswa yang menyajikan video materi perkuliahan interaktif, fitur request materi
+                kuliah, dan asisten pintar terintegrasi.
+              </p>
+
+              <div class="featured-keypoints">
+                <h4 class="keypoints-heading">Sorotan Fitur &amp; Keunggulan:</h4>
+                <ul class="keypoints-list">
+                  <li>
+                    <span class="keypoint-check" aria-hidden="true">✓</span>
+                    <span><strong>Peer-to-Peer Learning:</strong> Mahasiswa dapat menonton video penjelasan materi
+                      kuliah yang dibawakan langsung oleh rekan mahasiswa.</span>
+                  </li>
+                  <li>
+                    <span class="keypoint-check" aria-hidden="true">✓</span>
+                    <span><strong>Fitur Request Materi:</strong> Mengajukan permohonan pembahasan materi kuliah spesifik
+                      yang belum dipahami di kelas.</span>
+                  </li>
+                  <li>
+                    <span class="keypoint-check" aria-hidden="true">✓</span>
+                    <span><strong>Koleksi Materi Kuliah Terpopuler:</strong> Modul pembelajaran mulai dari Pemrograman
+                      C, Struktur Data, hingga Tips Perkuliahan.</span>
+                  </li>
+                  <li>
+                    <span class="keypoint-check" aria-hidden="true">✓</span>
+                    <span><strong>Antarmuka Responsif:</strong> Dibangun dengan visual modern yang nyaman dibuka di
+                      smartphone maupun monitor desktop.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Badges Teknologi -->
+              <div class="tech-stack-row" aria-label="Teknologi yang digunakan">
+                <span class="tech-badge">Web Application</span>
+                <span class="tech-badge">Peer-to-Peer Learning</span>
+                <span class="tech-badge">Video Explanations</span>
+                <span class="tech-badge">Responsive UI</span>
+                <span class="tech-badge">Production Live</span>
+              </div>
+
+              <!-- Tombol Aksi Utama -->
+              <div class="featured-actions">
+                <a href="https://tukarilmu.radya.my.id/" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary" title="Kunjungi Website TukarIlmu Secara Langsung">
+                  <span>Kunjungi Website Live</span>
+                  <img src="assets/icons/external.svg" alt="" width="18" height="18" aria-hidden="true">
+                </a>
+                <button type="button" class="btn btn-outline project-modal-trigger" data-project="tukarilmu">
+                  <span>Detail Spesifikasi</span>
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 4. PENDIDIKAN DAN PENGALAMAN -->
+    <section class="section history-section" id="riwayat">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-tag">Jejak Langkah</p>
+          <h2 class="section-title">Pendidikan &amp; Pengalaman</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-lead">Riwayat jenjang pendidikan formal yang telah ditempuh serta rekam jejak kepemimpinan
+            organisasi dan kegiatan.</p>
+        </header>
+
+        <div class="history-grid">
+
+          <!-- Kolom Riwayat Pendidikan -->
+          <div class="history-column">
+            <div class="column-title-box">
+              <span class="column-icon" aria-hidden="true">🎓</span>
+              <h3 class="column-heading">Riwayat Pendidikan</h3>
+            </div>
+
+            <div class="timeline">
+
+              <!-- Pendidikan 1: S1 Informatika UMM Angkatan 2024 -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <span class="timeline-badge badge-active">Sedang Berjalan</span>
+                    <time datetime="2024" class="timeline-date">2024 — Sekarang</time>
+                  </div>
+                  <h4 class="timeline-title">S1 Teknik Informatika</h4>
+                  <p class="timeline-org">Universitas Muhammadiyah Malang (UMM) — Angkatan 2024</p>
+                  <p class="timeline-desc">
+                    Menempuh studi sarjana teknik informatika dengan fokus pada rekayasa perangkat lunak, pemrograman
+                    web, struktur data &amp; algoritma, dan arsitektur sistem komputer.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Pendidikan 2: SMA Negeri 1 Turen -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <time datetime="2021/2024" class="timeline-date">2021 — 2024</time>
+                  </div>
+                  <h4 class="timeline-title">SMA Negeri 1 Turen</h4>
+                  <p class="timeline-org">Sekolah Menengah Atas Negeri 1 Turen</p>
+                  <p class="timeline-desc">
+                    Lulus dengan predikat memuaskan, aktif memimpin organisasi kepanduan sekolah sebagai Ketua Dewan
+                    Ambalan, serta mewakili sekolah di kancah nasional.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Pendidikan 3: MTsN 1 Turen -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <time datetime="2018/2021" class="timeline-date">2018 — 2021</time>
+                  </div>
+                  <h4 class="timeline-title">MTsN 1 Turen</h4>
+                  <p class="timeline-org">Madrasah Tsanawiyah Negeri 1 Turen</p>
+                  <p class="timeline-desc">
+                    Menyelesaikan pendidikan tingkat menengah pertama dengan aktif dalam kegiatan akademis, keagamaan,
+                    dan pembinaan kedisiplinan.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Pendidikan 4: SD Taman Siswa -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <time datetime="2012/2018" class="timeline-date">2012 — 2018</time>
+                  </div>
+                  <h4 class="timeline-title">SD Taman Siswa</h4>
+                  <p class="timeline-org">Sekolah Dasar Taman Siswa</p>
+                  <p class="timeline-desc">
+                    Menempuh pendidikan dasar formal berlandaskan nilai-nilai luhur budi pekerti, kekeluargaan, dan
+                    keaktifan kegiatan kepanduan.
+                  </p>
+                </div>
+              </article>
+
+              <!-- Pendidikan 5: TK Taman Tunas Kartika -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <time datetime="2010/2012" class="timeline-date">2010 — 2012</time>
+                  </div>
+                  <h4 class="timeline-title">TK Taman Tunas Kartika</h4>
+                  <p class="timeline-org">Taman Kanak-Kanak Tunas Kartika</p>
+                  <p class="timeline-desc">
+                    Memulai pendidikan anak usia dini pada tahun 2010, membangun fondasi kreativitas, kemandirian, dan
+                    sosialisasi awal.
+                  </p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Kolom Riwayat Pengalaman -->
+          <div class="history-column">
+            <div class="column-title-box">
+              <span class="column-icon" aria-hidden="true">💼</span>
+              <h3 class="column-heading">Pengalaman</h3>
+            </div>
+
+            <div class="timeline">
+
+              <!-- Pengalaman 1: Ketua Dewan Ambalan -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <span class="timeline-badge badge-accent">Kepemimpinan</span>
+                    <time datetime="2023/2024" class="timeline-date">2023 — 2024</time>
+                  </div>
+                  <h4 class="timeline-title">Ketua Dewan Ambalan</h4>
+                  <p class="timeline-org">Gerakan Pramuka Gudep SMA Negeri 1 Turen</p>
+                  <p class="timeline-desc">
+                    Memimpin struktur kepengurusan Dewan Ambalan penegak, bertanggung jawab atas perancangan,
+                    koordinasi, dan pelaksanaan seluruh program kerja pembinaan kepramukaan di tingkat SMA.
+                  </p>
+                  <ul class="timeline-bullets">
+                    <li>Memimpin koordinasi puluhan anggota ambalan dalam berbagai kegiatan internal dan eksternal.</li>
+                    <li>Meningkatkan kedisiplinan, manajemen waktu, dan kepemimpinan delegatif.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- Pengalaman 2: Peserta Raimuna Nasional -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <span class="timeline-badge badge-active">Tingkat Nasional</span>
+                    <time datetime="2023" class="timeline-date">2023</time>
+                  </div>
+                  <h4 class="timeline-title">Peserta Kontingen Raimuna Nasional (Rainas)</h4>
+                  <p class="timeline-org">Kwartir Nasional Gerakan Pramuka</p>
+                  <p class="timeline-desc">
+                    Terpilih mewakili kontingen dalam pertemuan akbar Pramuka Penegak dan Pandega se-Indonesia (Raimuna
+                    Nasional XII), mengikuti lokakarya kepemimpinan pemuda, pertukaran wawasan budaya, dan bakti karya
+                    sosial kemasyarakatan.
+                  </p>
+                  <ul class="timeline-bullets">
+                    <li>Membangun jejaring kolaborasi dengan pemuda berprestasi dari berbagai provinsi se-Indonesia.
+                    </li>
+                    <li>Mengasah keterampilan adaptasi, komunikasi efektif, dan wawasan kebangsaan.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <!-- Pengalaman 3: Pengembang TukarIlmu -->
+              <article class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-card">
+                  <div class="timeline-header">
+                    <time datetime="2024" class="timeline-date">2024 — Sekarang</time>
+                  </div>
+                  <h4 class="timeline-title">Pengembang Platform TukarIlmu</h4>
+                  <p class="timeline-org">Platform Belajar Mahasiswa (tukarilmu.radya.my.id)</p>
+                  <p class="timeline-desc">
+                    Mengembangkan dan mengelola website pembelajaran kolaboratif antarmahasiswa dengan antarmuka yang
+                    responsif, terstruktur rapi, dan mudah diakses.
+                  </p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. KONTAK (CONTACT) -->
+    <section class="section contact-section" id="kontak">
+      <div class="container">
+
+        <header class="section-header">
+          <p class="section-tag">Mari Terhubung</p>
+          <h2 class="section-title">Hubungi Saya</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+          <p class="section-lead">Tertarik untuk berdiskusi seputar peluang proyek web, kolaborasi platform TukarIlmu,
+            atau jejaring profesional? Silakan kirimkan pesan Anda!</p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Informasi Kontak Langsung -->
+          <aside class="contact-info-panel">
+            <h3 class="contact-panel-title">Informasi Kontak</h3>
+            <p class="contact-panel-desc">
+              Silakan hubungi saya melalui jalur komunikasi berikut. Saya berupaya merespons seluruh pesan sesegera
+              mungkin.
+            </p>
+
+            <address class="contact-methods">
+
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <img src="assets/icons/email.svg" alt="" width="20" height="20">
+                </div>
+                <div class="contact-method-detail">
+                  <span class="method-label">Alamat Gmail:</span>
+                  <a href="mailto:haidarhanifwahyudi@gmail.com" class="method-link">haidarhanifwahyudi@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <img src="assets/icons/phone.svg" alt="" width="20" height="20">
+                </div>
+                <div class="contact-method-detail">
+                  <span class="method-label">Nomor Telepon / WhatsApp:</span>
+                  <a href="tel:0895621142586" class="method-link">0895621142586</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <img src="assets/icons/location.svg" alt="" width="20" height="20">
+                </div>
+                <div class="contact-method-detail">
+                  <span class="method-label">Lokasi Domisili:</span>
+                  <span class="method-text">Malang, Jawa Timur, Indonesia</span>
+                </div>
+              </div>
+
+            </address>
+
+            <div class="contact-social-box">
+              <h4 class="social-box-title">Jejaring Kode &amp; Proyek:</h4>
+              <div class="social-pills">
+                <a href="https://github.com/Muniphan" target="_blank" rel="noopener noreferrer"
+                  class="social-pill-link">
+                  <img src="assets/icons/github.svg" alt="" width="18" height="18" aria-hidden="true">
+                  <span>GitHub: Muniphan</span>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Formulir Kontak Interaktif -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <fieldset class="form-fieldset">
+                <legend class="sr-only">Formulir Pengiriman Pesan</legend>
+
+                <!-- Input Nama -->
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">Nama Lengkap <span class="required-mark"
+                      aria-hidden="true">*</span></label>
+                  <input type="text" id="contact-name" name="name" class="form-input"
+                    placeholder="Masukkan nama lengkap Anda" required autocomplete="name">
+                  <span class="form-error" id="name-error" role="alert"></span>
+                </div>
+
+                <!-- Input Email -->
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Alamat Email <span class="required-mark"
+                      aria-hidden="true">*</span></label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="nama@email.com"
+                    required autocomplete="email">
+                  <span class="form-error" id="email-error" role="alert"></span>
+                </div>
+
+                <!-- Input Subjek -->
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">Subjek Pesan <span class="required-mark"
+                      aria-hidden="true">*</span></label>
+                  <input type="text" id="contact-subject" name="subject" class="form-input"
+                    placeholder="Topik atau subjek keperluan" required>
+                  <span class="form-error" id="subject-error" role="alert"></span>
+                </div>
+
+                <!-- Input Pesan -->
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">Isi Pesan <span class="required-mark"
+                      aria-hidden="true">*</span></label>
+                  <textarea id="contact-message" name="message" class="form-textarea" rows="5"
+                    placeholder="Tuliskan pesan, rincian proyek, atau pertanyaan Anda di sini..." required></textarea>
+                  <span class="form-error" id="message-error" role="alert"></span>
+                </div>
+
+                <!-- Tombol Submit -->
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  <span>Kirim Pesan Sekarang</span>
+                  <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                  </svg>
+                </button>
+
+                <!-- Status Feedback Notifikasi -->
+                <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+
+              </fieldset>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand" aria-label="Beranda Haidar Profile">
+            <span class="brand-badge">&lt;HHW/&gt;</span>
+            <span class="brand-name">Haidar Profile</span>
+          </a>
+          <p class="footer-tagline">
+            Portofolio digital pribadi Haidar Hanif Wahyudi (Mahasiswa Teknik Informatika Universitas Muhammadiyah
+            Malang). Dibangun murni dengan standar HTML5 semantik dan CSS murni tanpa framework.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navigasi Cepat Footer">
+          <h4 class="footer-heading">Navigasi Halaman</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#proyek">Portofolio Proyek</a></li>
+            <li><a href="#riwayat">Pengalaman</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Haidar Hanif Wahyudi</strong>. Seluruh Hak Cipta Dilindungi
+          Undang-Undang. Tugas 1 Pemrograman Web.
+        </p>
+
+        <!-- Tombol Kembali ke Atas (Back to Top) -->
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Kembali ke bagian atas halaman"
+          title="Kembali ke Atas">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 15l-6-6-6 6" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL DETAIL PROYEK ==================== -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button type="button" class="modal-close" id="modal-close"
+        aria-label="Tutup jendela rincian proyek">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Konten disuntikkan via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Berkas JavaScript Murni -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
